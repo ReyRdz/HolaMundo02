@@ -16,8 +16,15 @@ document.addEventListener("deviceready",onDeviceReady,
 false);
 }
 function onDeviceReady() {
-navigator.notification.alert("PhoneGap is ready!");
+navigator.notification.alert(
+    'You are the winner!',  // message
+    alertDismissed,         // callback
+    'Game Over',            // title
+    'Done'                  // buttonName
+);
 }
+  
+  
 </script>
 </head>
 <body onload="onBodyLoad()">
